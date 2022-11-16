@@ -33,9 +33,7 @@ for(let i = 0; i < atletas.length; i++){ // Roda o código para todos os objetos
 
   media = media.reduce(function(total, atual){
     return total + atual; // Soma as notas
-  },0)
-
-  media = media / comprimento; // Divide a soma das notas pela quantidade de notas somadas, obtendo a média
+  },0) / comprimento // Divide a soma das notas pela quantidade de notas somadas, obtendo a média
 
   //Imprime o nome do atleta, as notas obtidas por ele e a sua média válida de notas
   console.log(`Atleta: ${atletas[i].nome}
